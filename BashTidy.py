@@ -111,7 +111,7 @@ class BashtidyCommand(sublime_plugin.TextCommand):
 
     def run(self, edit):
         self.tab_str = ' '
-        self.tab_size = 2
+        self.tab_size = 4
 
         if self.view.sel()[0].empty():
             bashRegion = sublime.Region(0, self.view.size())
